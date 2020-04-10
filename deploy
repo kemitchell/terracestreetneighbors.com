@@ -1,3 +1,3 @@
 #!/bin/sh
 SITE=terracestreetneighbors.com
-rsync -4 -a --exclude .git . $SITE:/var/www/$SITE/
+rsync -4 -a --exclude .git --exclude deploy . $SITE:/var/www/$SITE/
